@@ -72,6 +72,8 @@ nav{
   border-radius:15px;
   /* margin-top: 5px; */
   z-index: 1;
+  max-width:100%;
+  overflow-x:auto;
 }
 img{
   /* border:2px solid black; */
@@ -86,7 +88,10 @@ img{
   cursor:default;
 }
 .title{
+  text-align: center;
   color:rgb(55, 55, 55);
+  max-width:none;
+  /* font-size: x-large; */
 }
 #aboutme{
   margin-top: 50px;
@@ -109,9 +114,7 @@ img{
   color:rgb(100, 100, 100);
   text-align: center;
 }
-.Home_box{
-  font-size: x-large;
-}
+
 a{
   text-decoration: none;
   color:rgb(55, 55, 55);
@@ -232,4 +235,76 @@ h2{
   text-align: left;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+.profile_image{
+  height:50px;
+  width: 50px;
+  object-fit:cover;
+}
+@media (max-width:768px){
+  #profile_name{
+    font-size: small;
+  }
+   .left-nav{
+    margin-left: 10px;
+   }
+   .title{
+    font-size: large;
+   }
+   .subtext{
+    font-size: small;
+   }
+   #projectbutton{
+    font-size: smaller;
+    padding:8px 25px;
+    border-radius: 5px;
+   }
+   .right-nav li a{ 
+    font-size:small;
+   }
+   .right-nav li{
+    margin-right: 0px;
+   }
+   .right-nav{
+    margin-right: 0px;
+   }
+   .profile_image{
+    height: 35px;
+    width: 35px;
+    object-fit: conver;
+   }
+   #aboutcontent{
+    margin:5px 25px;
+   }
+   p{font-size: x-small;}
+   h2{
+    font-size: small;
+   }
+   .skills{
+font-size: x-small;
+margin-right: 5px;
+margin-bottom: 5PX;
+padding:5px;
+
+   }
+   #aboutskills{
+    margin-left: 10px;
+    
+   }
+   #myskills{
+    font-size: small;
+   }
+   #aboutme::after{
+    left:256px;
+    top:190px;
+    height: 3px;
+    width: 15px;
+   }
+   #Home_compo{
+    height:500px;
+   }
+
+}
 
