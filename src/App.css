@@ -124,7 +124,7 @@ a:hover{
 #Home_compo{
   padding-top: 250px;
   height: 750px;
-  background-image:url('C:\Users\lenov\OneDrive\Desktop\OmVSab\myportfolio\public\images\concrete_seamless.webp');
+  background-image:url('../public/images/concrete_seamless.webp');
 }
 #projects_comp{
   margin-top: 95px;
