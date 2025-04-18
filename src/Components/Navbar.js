@@ -5,7 +5,7 @@ export default function Navbar(props) {
     <div>
         <nav>
               <span className='left-nav' onClick={props.homebutton}>
-                <img src='/images/Profileimage.jpeg' height={'50px'} width={'50px'}></img>
+                <img src='/images/Profileimage.jpeg' height={'50px'} width={'50px'} alt='profileimage'></img>
                 <h3 id='profile_name'>SPANDAN RAMDAS LADE</h3>
               </span> 
                <ul className='right-nav'>
