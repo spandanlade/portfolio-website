@@ -39,25 +39,8 @@
 
 /* mycss */
 
-.left-nav{
-  display: flex;
-  /* border:2px solid black; */
-  margin-left: 40px;
-}
-.right-nav{
-  display: flex;
-  /* border:2px solid black; */
-  margin-left: auto;
-  /* float:right; */
-  margin-right: 100px;
-}
-li{
-  margin-right: 50px;
-  display: flex;
-  margin-top:0px;
-  /* border:2px solid black; */
-  padding: 10px;
-  
+::-webkit-scrollbar{
+  display: none;
 }
 
 nav{
@@ -75,27 +58,112 @@ nav{
   max-width:100%;
   overflow-x:auto;
 }
-img{
+
+.left-nav{
+  display: flex;
+  /* border:2px solid black; */
+  margin-left: 40px;
+}
+
+.profile_image{
+  height:50px;
+  width: 50px;
+  object-fit:cover;
   /* border:2px solid black; */
   border-radius: 100%;
   margin-top: 8px;
   margin-right: 10px;
 }
+
 #profile_name{
   /* border:2px solid black; */
   color:rgb(55, 55, 55);
   font-size:larger;
   cursor:default;
 }
+
+.right-nav{
+  display: flex;
+  /* border:2px solid black; */
+  margin-left: auto;
+  /* float:right; */
+  margin-right: 100px;
+}
+
+li{
+  margin-right: 50px;
+  display: flex;
+  margin-top:0px;
+  /* border:2px solid black; */
+  padding: 10px;
+  
+}
+
+a{
+  text-decoration: none;
+  color:rgb(55, 55, 55);
+  font-size: large;
+}
+
+a:hover{
+  color:rgb(255, 255, 255);
+}
+
+#Home_compo{
+  padding-top: 250px;
+  height: 750px;
+  background-image:url('../public/images/concrete_seamless.webp');
+}
+
 .title{
   text-align: center;
   color:rgb(55, 55, 55);
   max-width:none;
   /* font-size: x-large; */
 }
+
+.subtext{
+  color:rgb(100, 100, 100);
+  text-align: center;
+}
+
+#projectbutton{
+  background-color: #17cdff;
+  border-collapse: collapse;
+  text-decoration: none;
+  border-color: #61dafb;
+  border-radius: 7px;
+  padding:14px 65px;
+  color:white;
+  font-weight:700;
+  border-style: none;
+  box-shadow: inset;
+  font-size: 18px;
+}
+
+#projectbutton:active{
+  background-color: #7be1fd ;
+  }
+
+.aboutdiv{
+  position:absolute;
+  top:750px;
+  left:0px;
+  right:0px;
+  background: rgb(246, 246, 246);
+}
+
+#about_comp{
+  margin-top: 150px;
+  height: 700px;
+  width: 100%;
+  /* border:2px solid black; */
+}
+
 #aboutme{
   margin-top: 50px;
 }
+
 #aboutme::after{
   /* background: #61dafb;
   width: 30px;
@@ -110,78 +178,84 @@ img{
     transform: translateX(-50%);
     border-radius: 5px
 }
-.subtext{
-  color:rgb(100, 100, 100);
-  text-align: center;
+
+#aboutcontent{
+  display: flex;
+  margin:35px 130px;
 }
 
-a{
-  text-decoration: none;
-  color:rgb(55, 55, 55);
-  font-size: large;
-
-}
-a:hover{
-  color:rgb(255, 255, 255);
-}
-#Home_compo{
-  padding-top: 250px;
-  height: 750px;
-  background-image:url('../public/images/concrete_seamless.webp');
-}
-#projects_comp{
-  margin-top: 95px;
-  height: 1000px;
+#aboutcontext{
+  display: inline;
+  float: left;
   border:2px solid black;
 }
+
+h2{
+  text-align: left;
+}
+
+p{
+  text-align: left;
+  font-size: large;
+  color:rgb(100, 100, 100);
+}
+
+#aboutskills{
+  display: inline;
+  float:right;
+  margin-left: 75px;
+  }
+
+#aboutskills.div{
+  background-color: #1bceff;
+}
+
+#row1{
+  display:flex;
+  justify-content: center;
+}
+
+#row2{
+  display:flex;
+  justify-content: center;
+}
+
+.skills{
+  margin-right: 20px;
+  margin-bottom: 20PX;
+  padding:20px;
+  background-color: rgb(225, 225, 225);
+  border-radius: 10px;
+}
+
+
 .projectdiv{
   /* border:10px solid black; */
   position:absolute;
   top:2000px;
   left:0px;
-  right:0px;
+  right:0px;  
+}
 
-}
-#about_comp{
-  margin-top: 150px;
-  height: 700px;
-  width: 100%;
-  /* border:2px solid black; */
-}
-.aboutdiv{
-  position:absolute;
-  top:1000px;
-  left:0px;
-  right:0px;
-  background: rgb(246, 246, 246);
-}
-#contact_comp{
+#projects_comp{
   margin-top: 95px;
   height: 1000px;
   border:2px solid black;
 }
+
 .contactdiv{
   position:absolute;
   top:3000px;
   left:0px;
   right:0px;
 }
-#projectbutton{
-  background-color: #17cdff;
-  border-collapse: collapse;
-  text-decoration: none;
-  border-color: #61dafb;
-  border-radius: 7px;
-  padding:14px 65px;
-  color:white;
-  font-weight:700;
-  border-style: none;
-  box-shadow: inset;
-  font-size: 18px;
+
+#contact_comp{
+  margin-top: 95px;
+  height: 1000px;
+  border:2px solid black;
 }
-#abouth1{
-  margin-top: 250px;
-}
+
 #projecth2{
   margin-top: 250px;
 }
@@ -189,61 +263,16 @@ a:hover{
   margin-top: 250px;
 }
 
-#projectbutton:active{
-background-color: #7be1fd ;
-}
-#aboutcontext{
-display: inline;
-float: left;
-border:2px solid black;
 
-}
-#aboutskills{
-display: inline;
-float:right;
-margin-left: 75px;
-}
-#aboutskills.div{
-  background-color: #1bceff;
-}
-#aboutcontent{
-  display: flex;
-  margin:35px 130px;
-}
-.skills{
-margin-right: 20px;
-margin-bottom: 20PX;
-padding:20px;
-background-color: rgb(225, 225, 225);
-border-radius: 10px;
-}
-#row1{
-  display:flex;
-  justify-content: center;
-}
-#row2{
-  display:flex;
-  justify-content: center;
-}
-p{
-  text-align: left;
-  font-size: large;
-  color:rgb(100, 100, 100);
 
-}
-h2{
-  text-align: left;
-}
 
-::-webkit-scrollbar{
-  display: none;
-}
-.profile_image{
-  height:50px;
-  width: 50px;
-  object-fit:cover;
-}
-@media (max-width:768px){
+
+
+
+
+
+
+@media (max-width:412px){
   #profile_name{
     font-size: small;
   }
@@ -277,34 +306,49 @@ h2{
    }
    #aboutcontent{
     margin:5px 25px;
+    display: block;
+    align-items: center;
    }
-   p{font-size: x-small;}
+   p{font-size: small;}
    h2{
-    font-size: small;
+    font-size: medium;
    }
    .skills{
-font-size: x-small;
-margin-right: 5px;
-margin-bottom: 5PX;
-padding:5px;
+    font-size: small;
+    margin-right: 7px;
+    margin-bottom: 10PX;
+    padding:10px;
+    border-radius: 5px;
 
    }
    #aboutskills{
     margin-left: 10px;
-    
+    float:none;
+
    }
    #myskills{
-    font-size: small;
+    font-size: medium;
    }
    #aboutme::after{
-    left:256px;
+    left:208px;
     top:190px;
     height: 3px;
     width: 15px;
    }
    #Home_compo{
-    height:500px;
+    height: 450px;
    }
+
+   .aboutdiv{
+    top:700px;
+   }
+   .projectdiv{
+    top:1455px;
+   }
+   .contactdiv{
+    top:2458px;
+   }
+   
 
 }
 
