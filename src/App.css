@@ -43,7 +43,7 @@
   display: none;
 }
 
-nav{
+.nav{
   display: flex;
   background-color:rgba(97,218,251,0.99);
   border:2px solid rgba(120, 120, 120, 0.5) ;
@@ -84,9 +84,10 @@ nav{
 
 .right-nav{
   display: flex;
+  list-style: none;
   /* border:2px solid black; */
-  margin-left: auto;
-  /* float:right; */
+  margin-left:auto;
+  float:right;
   margin-right: 100px;
 }
 
@@ -107,6 +108,38 @@ a{
 
 a:hover{
   color:rgb(255, 255, 255);
+}
+
+.hamburger{
+  position: absolute;
+  right:40px;
+  top:20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span{
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  transition:all 0.3s ease;
+  border-radius: 10px;
+}
+
+.hamburger.active span:nth-child(1){
+  transform: rotate(45deg) translate(5px 5px);
+}
+.hamburger.active span:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3){
+  transform: rotate(-45deg) translate(7px -7px);
 }
 
 #Home_compo{
@@ -232,7 +265,7 @@ p{
 .projectdiv{
   /* border:10px solid black; */
   position:absolute;
-  top:2000px;
+  top:1505px;
   left:0px;
   right:0px;  
 }
@@ -241,7 +274,10 @@ p{
   margin-top: 95px;
   height: 1000px;
   border:2px solid black;
+  height: 750px;
+  background-image:url('../public/images/concrete_seamless.webp');
 }
+
 
 .contactdiv{
   position:absolute;
@@ -255,13 +291,33 @@ p{
   height: 1000px;
   border:2px solid black;
 }
-
-#projecth2{
-  margin-top: 250px;
-}
 #contacth1{
   margin-top: 250px;
 }
+
+.project{
+  margin-top: 40px;
+   display: flex;
+}
+.projectname{
+  margin-top: 100px;
+  font-size: x-large;
+  font-weight: 600;
+}
+.projectimage{
+  height: 350px;
+  width: 600px;
+  margin-left: 50px;
+  border: 20px solid rgb(162, 162, 162);
+  border-radius: 15px;
+}
+.projectdescription{
+  margin-left: 100px;
+  text-align:initial;
+}
+
+
+
 
 
 
@@ -348,6 +404,70 @@ p{
    .contactdiv{
     top:2458px;
    }
+
+   /* for toggle menu in mobile view */
+   .hamburger {
+    display: flex;
+   }
+
+   .right-nav{
+    display: none;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 0;
+   }
+
+   .right-nav.active{
+    position:sticky;
+    display: flex;
+    margin-top: 50px;
+
+   }
+   .right-nav li{
+    margin: 10px 0;
+    margin-right: 5px;
+   }
+   .right-nav li a{
+    color:white;
+   }
+   .left-nav.active{
+    display: none;
+    
+   };
+   .nav{
+    border-radius: 0px;
+   }
+  
+.project{
+   display: block;
+}
+.projectname{
+  margin-top: 50px;
+  font-size: large;
+  font-weight:700;
+}
+.projectimage{
+  height: 150px;
+  width: 280px;
+  margin-left: 0px;
+  border: 12px solid rgb(162, 162, 162);
+  border-radius: 5px;
+}
+.projectdescription{
+  margin-left: 50px;
+  text-align:initial;
+}
+.prodesc_context{
+  margin-left: 50px;
+  text-align: left;
+}
+.project_compo{
+  height: 450px;
+}
+
+
    
 
 }

@@ -23,6 +23,7 @@ export default function About() {
         <div className='skills'>GIT</div>
         <div className='skills'>Github</div>
         <div className='skills'>Responsive Design</div>
+        <div className='skills'>Netlify</div>
         </div>
         
       </div>
