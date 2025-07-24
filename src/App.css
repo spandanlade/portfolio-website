@@ -229,6 +229,7 @@ h2{
 
 p{
   text-align: left;
+  margin-left: 100px;
   font-size: large;
   color:rgb(100, 100, 100);
 }
@@ -261,6 +262,25 @@ p{
   border-radius: 10px;
 }
 
+.Project_title{
+  padding-top: 30px;
+  text-align: center;
+  color:rgb(55, 55, 55);
+  max-width:none;
+}
+
+.Project_title::after{
+content: '';
+    position: absolute;
+    top:100px;
+    height: 5px;
+    width: 35px;
+    background: #1bceff;
+    left: 766px;
+    transform: translateX(-50%);
+    border-radius: 5px
+}
+
 
 .projectdiv{
   /* border:10px solid black; */
@@ -272,27 +292,124 @@ p{
 
 #projects_comp{
   margin-top: 95px;
-  height: 1000px;
-  border:2px solid black;
-  height: 750px;
+  /* border:2px solid black; */
+  height: 1400px;
   background-image:url('../public/images/concrete_seamless.webp');
 }
 
 
 .contactdiv{
   position:absolute;
-  top:3000px;
+  top:2906px;
   left:0px;
   right:0px;
+}
+
+.Contact_title{
+  padding-top: 50px;
+  text-align: center;
+  color:rgb(55, 55, 55);
+  max-width:none;
+}
+
+.Contact_title::after{
+  content: '';
+    position: absolute;
+    top:100px;
+    height: 5px;
+    width: 35px;
+    background: #1bceff;
+    left: 766px;
+    transform: translateX(-50%);
+    border-radius: 5px
+}
+
+.contact_desc{
+  text-align: center;
+  margin: 0px 350px;
+  font-size: large;
+  color:rgb(100, 100, 100);
 }
 
 #contact_comp{
   margin-top: 95px;
   height: 1000px;
-  border:2px solid black;
+  /* border:2px solid black; */
+  background-image:url('../public/images/stripes-light.webp');
 }
 #contacth1{
   margin-top: 250px;
+}
+
+#contact_form{
+  margin-top: 50px;
+  border-radius:  10px;
+  margin-left: 360px;
+  background-color: white;
+  height: 730px;
+  width:790px;
+  /* border:1px solid black; */
+  padding-top: 10px;
+}
+
+#form{
+  margin: 40px;
+  text-align: left;
+}
+
+#name_label{
+  font-weight:bold;
+  color:rgb(100, 100, 100);
+}
+
+#name{
+  margin-top:10px;
+  margin-bottom: 35px;
+  width: 700px;
+  height: 60px;
+  font-size:medium;
+  padding-left: 15px;
+  border-radius: 5px;
+  border:0px;
+  background-color:rgba(240,240,240,255) ;
+}
+
+#message_label{
+  font-weight:bold;
+  color:rgb(100, 100, 100);
+}
+
+
+
+#message{
+  margin-bottom: 35px;
+  margin-top:10px;
+  width: 700px;
+  height: 200px;
+  font-size:larger;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border:0px;
+  background-color:rgba(240,240,240,255) ;
+}
+
+#submit_button{
+  float: right;
+}
+
+#submit{
+  background-color: #17cdff;
+  border-collapse: collapse;
+  text-decoration: none;
+  border-color: #61dafb;
+  border-radius: 7px;
+  padding:14px 65px;
+  color:white;
+  font-weight:700;
+  border-style: none;
+  box-shadow: inset;
+  font-size: 18px;
 }
 
 .project{
@@ -307,13 +424,20 @@ p{
 .projectimage{
   height: 350px;
   width: 600px;
-  margin-left: 50px;
-  border: 20px solid rgb(162, 162, 162);
-  border-radius: 15px;
+  margin-left: 100px;
+  border: 15px solid rgba(97,218,251,0.99);
+  border-radius: 0px 15px ;
 }
 .projectdescription{
-  margin-left: 100px;
+  margin-left: 200px;
+  margin-top: 100px;
   text-align:initial;
+}
+.prodesc_context{
+  text-align: left;
+  left: 0;
+  margin-right: 200px;
+  margin-left: 100px;
 }
 
 
@@ -456,19 +580,101 @@ p{
   border-radius: 5px;
 }
 .projectdescription{
-  margin-left: 50px;
-  text-align:initial;
+  margin:0px;
+  margin-top: 10px;
+  text-align: center;
+  
 }
 .prodesc_context{
-  margin-left: 50px;
-  text-align: left;
+  text-align: center;
+  margin: 15px;
 }
 .project_compo{
   height: 450px;
 }
+p{
+ margin-left: 50px;
+ margin-right: 30px;
+}
+
+.contact_desc{
+  text-align: center;
+  font-size: medium;
+  margin: 0px;
+}
+  
+#contact_form{
+  border-radius:  5px;
+  margin-left: 31px;
+  height: 400px;
+  width:350px;
+  padding: 4px;
+}
+
+#form{
+  margin: 40px;
+  text-align: left;
+}
+
+#name_label{
+  font-weight:bold;
+  font-size: small;
+  color:rgb(100, 100, 100);
+}
+
+#name{
+  margin-top:0px;
+  margin-bottom: 5px;
+  width: 250px;
+  height: 20px;
+  font-size:x-small;
+  padding-left: 15px;
+  border-radius: 5px;
+  border:0px;
+  background-color:rgba(240,240,240,255) ;
+}
+
+#message_label{
+  margin-top: 0px;
+  font-weight:bold;
+  font-size: small;
+  color:rgb(100, 100, 100);
+}
 
 
-   
+
+#message{
+  margin-top:0px;
+  margin-bottom:10px;
+  width: 250px;
+  height: 100px;
+  font-size:smaller;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border:0px;
+  background-color:rgba(240,240,240,255) ;
+}
+
+#submit_button{
+  float: right;
+}
+
+#submit{
+  background-color: #17cdff;
+  border-collapse: collapse;
+  text-decoration: none;
+  border-color: #61dafb;
+  border-radius: 7px;
+  padding:5px 30px;
+  color:white;
+  font-weight:700;
+  border-style: none;
+  box-shadow: inset;
+  font-size: 18px;
+}
+
+
 
 }
 
