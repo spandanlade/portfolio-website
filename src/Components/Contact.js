@@ -91,7 +91,7 @@ try{
           </div>
           <div>
           <label id='message_label' htmlFor='message'>Message</label><br></br>
-          <textarea name='message' placeholder='Enter Your Message' id='message' aria-colspan={100} value={formData.message} onChange={handleChange}></textarea>
+          <textarea name='message' placeholder='Enter Your Message' id='message' value={formData.message} onChange={handleChange}></textarea>
           {errors.message && <span style={{ color: 'red'}}>{errors.message}</span>}
           </div>
           <div id='submit_button'><input type='submit' value={'Submit'} name='submit' id='submit'></input></div>
