@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div id='about_comp'>
-      <h1 id='aboutme' className='title'>ABOUT ME</h1> <br></br>
+      <h1 id='aboutme' className='title-text'>ABOUT ME</h1> <br></br>
       <h3 className='subtext'>Hey you will find more information about me, what i do, and my current skills mostly in terms of programming and technology</h3><br></br>
       <div id='aboutcontent'>
         <div id='aboutcontex'>

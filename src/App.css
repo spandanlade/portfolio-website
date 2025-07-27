@@ -148,11 +148,10 @@ a:hover{
   background-image:url('../public/images/concrete_seamless.webp');
 }
 
-.title{
-  text-align: center;
+.title-text{
   color:rgb(55, 55, 55);
-  max-width:none;
-  /* font-size: x-large; */
+  width:auto;
+  text-align: center;
 }
 
 .subtext{
@@ -191,16 +190,9 @@ a:hover{
   height: 700px;
   width: 100%;
   /* border:2px solid black; */
-}
-
-#aboutme{
-  margin-top: 50px;
-}
+} 
 
 #aboutme::after{
-  /* background: #61dafb;
-  width: 30px;
-  height: 5px; */
   content: '';
     position: absolute;
     top:210px;
@@ -211,6 +203,7 @@ a:hover{
     transform: translateX(-50%);
     border-radius: 5px
 }
+
 
 #aboutcontent{
   display: flex;
@@ -264,9 +257,9 @@ p{
 
 .Project_title{
   padding-top: 30px;
+  width: auto;
   text-align: center;
   color:rgb(55, 55, 55);
-  max-width:none;
 }
 
 .Project_title::after{
@@ -510,7 +503,10 @@ content: '';
     font-size: medium;
    }
    #aboutme::after{
-    left:208px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
     top:190px;
     height: 3px;
     width: 15px;

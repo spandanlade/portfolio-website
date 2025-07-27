@@ -3,7 +3,7 @@ import React from 'react'
 export default function Projects() {
   return (
     <div id='projects_comp'>
-      <h1 id='aboutme' className='Project_title'>PROJECTS</h1> <br></br>
+      <h1 id="aboutme" className='Project_title'>PROJECTS</h1> <br></br>
       <div className='projectname'>Electricity Billing System</div>
       <div className='project'>
         <img className='projectimage' src='/images/image.png' alt='project_1_image'></img>
